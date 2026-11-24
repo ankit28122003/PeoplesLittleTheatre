@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Playfair Display", Georgia, serif;
+  color: #eee7d8;
+  background: #090909;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  --paper: #090909;
+  --ink: #eee7d8;
+  --muted: #b9ad98;
+  --gold: #d2b16f;
+  --maroon: #651927;
+  --line: #3b3327;
+  --serif: "Playfair Display", Georgia, serif;
+  --display: "Cinzel", Georgia, serif;
+}
+
+* { box-sizing: border-box; }
+html { min-width: 320px; scroll-behavior: smooth; }
+body { min-width: 320px; margin: 0; overflow-x: hidden; }
+button, input, textarea, select { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+button { cursor: pointer; }
+img, iframe { max-width: 100%; }
+a { color: inherit; }
+::selection { color: #090909; background: var(--gold); }

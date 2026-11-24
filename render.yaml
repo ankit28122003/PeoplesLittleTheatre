@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: plt-content-api
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run typecheck:server
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: CLIENT_ORIGINS
+        sync: false
